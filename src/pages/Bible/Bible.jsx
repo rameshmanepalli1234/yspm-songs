@@ -1,11 +1,12 @@
 import React from "react";
+import Body from "../../body/Body";
+import Footer from "../../footer/Footer";
 
 const Bible = () => {
     return (
-        <div className='container'>
-            <h1 className='text-center' style={{paddingTop: '30%'}}>
-                Read Bible
-            </h1>
+        <div>
+            <Body />
+            <Footer/>
         </div>
     )
 }
