@@ -5,7 +5,10 @@ import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Service/Services";
 import Testimonial from "./pages/Testimonial/Testimonial";
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar/Navbar';
+import Bible from "./pages/Bible/Bible";
+import Songs from "./pages/Songs/Songs";
+import DailyVerse from "./pages/DailyVerse/DailyVerse";
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
               <Route path="/service" element={<Services/>}/>
               <Route path="/testimonial" element={<Testimonial/>}/>
               <Route path="/contact" element={<Contact/>}/>
+              <Route path="/bible" element={<Bible/>}/>
+              <Route path="/songs" element={<Songs/>}/>
+              <Route path="/verse" element={<DailyVerse/>}/>
           </Routes>
       </BrowserRouter>
   );

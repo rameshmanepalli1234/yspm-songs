@@ -46,7 +46,7 @@ const Navbar = () => {
     return (
         <nav className='navbar navbar-expand-lg navbar-mainbg'>
             <NavLink to='/' className='navbar-brand navbar-logo'>
-                Web Solutions
+                YSPM Ministries
             </NavLink>
 
             <button
@@ -77,7 +77,7 @@ const Navbar = () => {
                     </div>
                     <li className='nav-item active'>
                         <NavLink to='/' className='nav-link'>
-                            <i className='fas fa-tachometer-alt'>
+                            <i className='fa fa-home'>
                             </i>
                             Home
                         </NavLink>
@@ -91,9 +91,30 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item'>
                         <NavLink to='/service' className='nav-link'>
-                            <i className='far fa-clone'>
+                            <i className='fa fa-comments'>
                             </i>
                             Services
+                        </NavLink>
+                    </li>
+                    <li className='nav-item'>
+                        <NavLink to='/songs' className='nav-link'>
+                            <i className='fas fa-music'>
+                            </i>
+                            Songs
+                        </NavLink>
+                    </li>
+                    <li className='nav-item'>
+                        <NavLink to='/verse' className='nav-link'>
+                            <i className='fas fa-book'>
+                            </i>
+                            Verse of the Day
+                        </NavLink>
+                    </li>
+                    <li className='nav-item'>
+                        <NavLink to='/bible' className='nav-link'>
+                            <i className='fas fa-bible'>
+                            </i>
+                            Bible
                         </NavLink>
                     </li>
                     <li className='nav-item'>
@@ -105,7 +126,7 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item'>
                         <NavLink to='/contact' className='nav-link'>
-                            <i className='far fa-copy'>
+                            <i className='fas fa-address-card'>
                             </i>
                             Contact Us
                         </NavLink>
