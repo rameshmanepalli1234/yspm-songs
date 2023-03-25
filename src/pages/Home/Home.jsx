@@ -1,11 +1,12 @@
 import React from "react";
+import Body from "../../body/Body";
+import Footer from "../../footer/Footer";
 
 const Home = () => {
     return (
-        <div className='container'>
-            <h1 className='text-center'>
-                Home
-            </h1>
+        <div >
+            <Body />
+            <Footer/>
         </div>
     )
 }
