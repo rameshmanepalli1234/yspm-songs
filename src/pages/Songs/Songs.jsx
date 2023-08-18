@@ -1,15 +1,34 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Footer from "../../footer/Footer";
-import {songs} from "../../components/jsFiles/songs";
+import axios from "axios";
+import Placeholder from "../../components/reusable/placeholder/Placeholder";
 import './Songs.scss';
 
 const Songs = () => {
+    const BASEURL = 'https://yspm-songs.onrender.com';
+    const [songs,setSongs] = useState([]);
+    const [isSongsLoading, setIsSongsLoading] = useState(true);
+
+   useEffect(() => {
+       // setIsSongsLoading(true);
+       axios.get(BASEURL + '/api/songs/all')
+           .then((res) => {
+           if(res.status === 200) {
+               setIsSongsLoading(false);
+               setSongs(res.data.data);
+           }
+       })
+   },[])
+
+    console.log('issongs loading =>',isSongsLoading);
+
     return (
         <>
+            {/*<Placeholder type='table' height={700}/>*/}
             <div className='songs'>
-                {songs.map(song => {
+                {!isSongsLoading ? songs?.map(song => {
                     return (
-                        <div>
+                        <>
                             <div className='song-container'>
                                 <div className='song-title'>
                                 {song.title}
@@ -23,9 +42,10 @@ const Songs = () => {
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </>
                     )
-                })}
+                }) : <Placeholder type='table' height={700}/>
+                }
             </div>
             <div>
                 <Footer/>

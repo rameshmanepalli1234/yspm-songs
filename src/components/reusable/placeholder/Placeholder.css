@@ -1,0 +1,219 @@
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.linear-background {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 104px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Overview Card CSS */
+.card-height {
+    height: 66px;
+}
+
+.top-right1 {
+    background: #FFF;
+    width: 45%;
+    height: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.block1 {
+    background: #FFF;
+    width: 15px;
+    height: 44px;
+    position: absolute;
+    left: 40%;
+    top: 24px;
+}
+
+.block2 {
+    background: #FFF;
+    width: 15px;
+    height: 44px;
+    position: absolute;
+    left: 72%;
+    top: 24px;
+}
+
+.middle-strip1 {
+    background: #FFF;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+}
+
+.middle-strip2 {
+    background: #FFF;
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    top: 45px;
+}
+
+/* General CSS (Card with Title) */
+.top-right {
+    background: #FFF;
+    width: 60%;
+    height: 25px;
+    position: absolute;
+    right: 0;
+}
+
+.middle-center {
+    background: #FFF;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 25px;
+}
+
+/* Table Placeholder CSS */
+.table-strip {
+    background: #FFF;
+    width: 100%;
+    height: 20px;
+    margin-top: 25px;
+}
+
+/* Table Chart CSS */
+.center-verticle {
+    background: #FFF;
+    width: 4%;
+    height: 35%;
+    position: absolute;
+    right: 48%;
+    left: 48%;
+}
+
+.horizontal-space {
+    background: #FFF;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 32%;
+}
+
+/* Insight Header Placeholder */
+.insight-header {
+    height: 66px;
+    /* margin: 14px 0; */
+}
+
+.insight-block1 {
+    /* background: #fff; */
+    background: #f2f4f8;
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    top: 24px;
+}
+
+.insight-block2 {
+    /* background: #fff; */
+    background: #f2f4f8;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 35%;
+}
+
+.insight-block3 {
+    /* background: #fff; */
+    background: #f2f4f8;
+    width: 4%;
+    height: 100%;
+    position: absolute;
+    left: 73%;
+}
+
+.insight-block4 {
+    /* background: #fff; */
+    background: #f2f4f8;
+    width: 2%;
+    height: 100%;
+    position: absolute;
+    right: 10%;
+}
+
+.insight-block5 {
+    /* background: #fff; */
+    background: #f2f4f8;
+    width: 30%;
+    height: 48%;
+    position: absolute;
+    left: 16%;
+    bottom: 0;
+}
+
+.insight-block6 {
+    /* background: #fff; */
+    background: #f2f4f8;
+    width: 12%;
+    height: 20%;
+    position: absolute;
+    right: 0;
+}
+
+.insight-block7 {
+    /* background: #fff; */
+    background: #f2f4f8;
+    width: 12%;
+    height: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* .inter-draw {
+    background: #FFF;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+}
+
+.inter-right--top {
+    background: #FFF;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+.inter-right--bottom {
+    background: #FFF;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+
+.inter-crop {
+    background: #FFF;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100px;
+} */
