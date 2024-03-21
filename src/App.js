@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Bible from "./pages/Bible/Bible";
 import Songs from "./pages/Songs/Songs";
 import DailyVerse from "./pages/DailyVerse/DailyVerse";
+import SongDetail from "./pages/Songs/SongDetail/SongDetail";
 
 const App = () => {
   return (
@@ -21,8 +22,9 @@ const App = () => {
               <Route path="/testimonial" element={<Testimonial/>}/>
               <Route path="/contact" element={<Contact/>}/>
               <Route path="/bible" element={<Bible/>}/>
-              <Route path="/songs" element={<Songs/>}/>
               <Route path="/verse" element={<DailyVerse/>}/>
+              <Route path="/songs" element={<Songs/>}/>
+              <Route path="/songs/:songId" element={<SongDetail />} /> {/* Dynamic route for individual song */}
           </Routes>
       </BrowserRouter>
   );

@@ -3,6 +3,7 @@ import Footer from "../../footer/Footer";
 import axios from "axios";
 import Placeholder from "../../components/reusable/placeholder/Placeholder";
 import './Songs.scss';
+import {Link} from "react-router-dom";
 
 const Songs = () => {
     const BASEURL = 'https://yspm-songs.onrender.com';
@@ -37,9 +38,9 @@ const Songs = () => {
                                    {song.lyric}
                                 </div>
                                 <div>
-                                    <button className='viewLyricButton'>
+                                    <Link to={`/songs/${song.id}`} className='viewLyricButton'>
                                         View Lyric
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </>

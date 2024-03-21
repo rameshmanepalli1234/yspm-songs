@@ -18,7 +18,14 @@ const Analysis = () => {
                 // {
                 //     label: 'Y',
                 //     backgroundColor: 'black',
-                //     data: [20, 30, 10]
+                //     data: [20, 30, 10],
+                //     yAxisID: 'y1',
+                // },
+                // {
+                //     label: 'Z',
+                //     backgroundColor: 'red',
+                //     data: [20, 30, 10],
+                //     yAxisID: 'y',
                 // }
             ]
         }
@@ -70,6 +77,48 @@ const Analysis = () => {
                             color: 'blue'
                         }
                     },
+                    // y1: {
+                    //     beginAtZero: true,
+                    //     stacked: true,
+                    //     position: 'right',
+                    //     border: {
+                    //         display: false,
+                    //         color: 'yellow'
+                    //     },
+                    //     title: {
+                    //         display: true,
+                    //         text: 'Analysis',
+                    //         padding: 2,
+                    //         count: 10,
+                    //         font: {
+                    //             size: 20,
+                    //             weight: 400,
+                    //             family: 'Rubik',
+                    //             style: 'normal'
+                    //         },
+                    //         color: 'green'
+                    //     },
+                    //     grid: {
+                    //         display: false,
+                    //         drawTicks: false,
+                    //         color: 'orange'
+                    //     },
+                    //     ticks: {
+                    //         font: {
+                    //             size: 12,
+                    //             family: 'Rubik',
+                    //             weight: 400,
+                    //             style: 'normal'
+                    //         },
+                    //         precision: 0,
+                    //         color: 'purple',
+                    //         lineHeight: 18,
+                    //         padding: 10,
+                    //         callback: function (value) {
+                    //             return `${value}k`;
+                    //         },
+                    //     },
+                    // },
                     y: {
                         beginAtZero: true,
                         stacked: true,
